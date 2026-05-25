@@ -1,0 +1,10 @@
+sources:
+  - name : SALES_PLANNING
+    database : RETAIL_ANALYTICS_RAW_DEV
+    schema : SALES_PLANNING
+    tables : 
+      - name : TB_CUSTOMERS
+      - name : TB_EMPLOYEES
+      - name : TB_PRODUCTS
+      - name : TB_ORDERS
+      - name : TB_ORDER_ITEMS

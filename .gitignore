@@ -1,0 +1,21 @@
+# Python virtual environment
+.venv/
+dbt-env/
+
+# dbt generated folders
+target/
+dbt_packages/
+logs/
+
+# OS files
+.DS_Store
+
+# Snowflake keys
+*.p8
+*.pem
+
+# Environment variables
+.env
+
+# Python cache
+__pycache__/

@@ -1,0 +1,16 @@
+snapshots:
+  - name : TB_PRODUCT_SNAPSHOT
+    relation: source('SALES_PLANNING','TB_PRODUCTS')
+    description: snapshot using check strategy type for products table
+    config:
+      database: RETAIL_ANALYTICS_CURATED_DEV
+      #schema: dbt_hitesh
+      strategy: check
+      unique_key: product_id
+      check_cols: ['product_id', 'product_name','category', 'price']
+      hard_deletes: invalidate
+
+
+
+
+

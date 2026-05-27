@@ -1,0 +1,16 @@
+snapshots:
+  - name : TB_ORDERS_SNAPSHOT
+    relation: source('SALES_PLANNING','TB_ORDERS')
+    description: snapshot using timestamp strategy type for orders table
+    config:
+      database: RETAIL_ANALYTICS_CURATED_DEV
+      #schema: dbt_hitesh
+      strategy: timestamp
+      unique_key: order_id
+      updated_at: order_date
+      hard_deletes: invalidate
+
+
+
+
+
